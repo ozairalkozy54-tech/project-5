@@ -6,6 +6,13 @@ body {
   color: white;
   background-color: black;
 }
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 body p {
   color: rgb(154, 145, 145);
 }
@@ -32,10 +39,14 @@ body p {
   cursor: pointer;
 }
 #li11 {
-  color: rgb(189, 128, 15);
+  color: orangered;
+}
+#menu a {
+  text-decoration: none;
+  color: inherit;
 }
 .nav-list ul li:hover {
-  color: rgb(134, 93, 18);
+  color: orangered;
 }
 .nav1 input {
   background-color: orangered;
@@ -342,7 +353,7 @@ textarea {
   #man2 {
     width: 260px;
     height: auto;
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .serv1 {
     margin-top: 100px;
