@@ -9,19 +9,24 @@ body {
 html {
   scroll-behavior: smooth;
 }
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 body p {
   color: rgb(154, 145, 145);
 }
 
 .nav1 {
-  display: flex;
-  justify-content: space-around;
-  margin: 30px 0px;
   width: 100%;
+  margin-top: 20px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .nav1 h2 {
   font-weight: bold;
@@ -32,11 +37,13 @@ body p {
   display: inline-block;
 }
 .nav-list ul li {
-  margin: 30px;
-  list-style-type: none;
-  display: inline;
-  text-align: center;
+  margin: 0 10px;
   cursor: pointer;
+}
+.nav-list ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
 }
 #li11 {
   color: orangered;
@@ -51,16 +58,22 @@ body p {
 .nav1 input {
   background-color: orangered;
   color: white;
-  width: 85px;
+  padding: 5px 15px;
+  height: 30px;
   border-radius: 7px;
   border: none;
 }
 .home1 {
   display: flex;
-  margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
 }
 .home {
   margin-left: 95px;
+  flex: 1;
 }
 
 .home h5 {
@@ -104,10 +117,11 @@ body p {
   height: 100px;
 }
 #man2 {
+  flex: 1;
+  max-width: 400px;
   margin: auto;
   margin-top: -50px;
   margin-left: 20px;
-  width: 400px;
   height: 500px;
 }
 #circle {
@@ -158,18 +172,21 @@ body p {
 }
 .cv1 {
   display: flex;
+  justify-content: center;
 }
 .cv1 img {
   width: 400px;
   height: 500px;
 }
 .cv2 {
-  margin-top: 100px;
-  width: 650px;
-  margin-left: 40px;
+  margin-top: 50px;
+  width: 600px;
+  margin-left: 20px;
 }
 .cv2 p {
   text-align: justify;
+  width: 95%;
+  line-height: 25px;
 }
 .cv2 input {
   height: 30px;
@@ -442,8 +459,6 @@ textarea {
   .zxc {
     flex-direction: column;
   }
-}
-@media (max-width: 800px) {
   .nav1 {
     position: relative;
     display: flex;
@@ -477,8 +492,6 @@ textarea {
   .lk {
     margin-bottom: 20px;
   }
-}
-@media (max-width: 800px) {
   .home {
     text-align: center;
   }
@@ -486,32 +499,26 @@ textarea {
   .home h5 {
     margin-bottom: -8px;
   }
-
   .home h3 {
     margin-bottom: -5px;
   }
-
   #inp1,
   #inp2 {
     display: inline-block;
     margin-top: 15px;
   }
-
   #img-ho2 {
     display: block;
     margin: 15px auto 0;
     width: 230px;
     height: auto;
   }
-}
-@media (max-width: 800px) {
   .home1 {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   #circle {
     position: relative;
     width: 260px;
@@ -519,7 +526,6 @@ textarea {
     margin: 20px auto 0;
     z-index: 1;
   }
-
   #man2 {
     position: absolute;
     left: 50%;
@@ -529,8 +535,6 @@ textarea {
     height: auto;
     z-index: 2;
   }
-}
-@media (max-width: 800px) {
   .fram18,
   .fram19 {
     display: flex;
@@ -543,8 +547,6 @@ textarea {
     width: 90%;
     margin: 0;
   }
-}
-@media (max-width: 800px) {
   .cv1 {
     position: relative;
     display: flex;
@@ -565,4 +567,9 @@ textarea {
     margin: 0;
     z-index: 1;
   }
+  .nav1 h2 {
+    display: none;
+  }
 }
+
+
